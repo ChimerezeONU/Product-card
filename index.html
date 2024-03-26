@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            background-color: lightorange;
+        }
+
+        .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    flex-basis: 50%; /* Set the width to 50% to have two cards per row */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Rest of the CSS code remains the same */
+        
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product .image {
+            margin-bottom: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .product .image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .product span {
+            font-size: 16px;
+            font-weight: bold;
+            color: #888;
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .product .stars {
+            color: #f5c518;
+            margin-bottom: 10px;
+        }
+
+        .product .buy button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product:hover .buy button {
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="image">
+                <img src="asset/images/earphone.png" alt="">
+            </div>
+            <div class="namePrice">
+                <h3>Earphone</h3>
+                <span>$15.99</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="image">
+                <img src="asset/images/iphone2.png" alt="">
+            </div>
+            <div class="namePrice">
+                <h3>iPhone</h3>
+                <span>$120.99</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="image">
+                <img src="asset/images/laptop.png" alt="">
+            </div>
+            <div class="namePrice">
+                <h3>Laptop</h3>
+                <span>$150.99</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="image">
+                <img src="asset/images/watch3.png" alt="">
+            </div>
+            <div class="namePrice">
+                <h3>Watch</h3>
+                <span>$99.99</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
